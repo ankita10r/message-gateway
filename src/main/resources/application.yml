@@ -17,9 +17,9 @@ spring:
       use-new-id-generator-mappings: false
 
   datasource:
-    url: jdbc:mysql:thin://operations-mysql:3306/messagegateway
+    url: jdbc:mysql:thin://localhost:3306/messagegateway
     username: root
-    password: ethieTieCh8ahv
+    password: mysql
     driver-class-name: org.drizzle.jdbc.DrizzleDriver
 
 # Status Callback configuration for Twilio. Port will be taken from server configuration
@@ -44,3 +44,11 @@ management:
         enabled: true
       readiness:
         enabled: true
+
+providerSource:
+  fromDatabase: disabled
+  fromyml: enabled
+
+providerKeys:
+  telerivetApiKey: eKiC1_JWdKy7eaTGQFHxXXjXjacr60W9Zntl
+  telerivetProjectId: PJ5ff552ce01d2978c
